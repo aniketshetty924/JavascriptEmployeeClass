@@ -240,7 +240,7 @@ class Employee {
   }
   updateDOB(dob) {
     try {
-      if (typeof dob != "string") throw new Error("invalid");
+      if (typeof dob != "string") throw new Error("invalid dob");
       const datePattern = /^(\d{2})\/(\d{2})\/(\d{4})$/;
       const dobmatch = dob.match(datePattern);
       if (!dobmatch) {
